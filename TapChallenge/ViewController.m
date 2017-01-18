@@ -61,8 +61,7 @@
 
 #pragma mark - Actions
 
-- (IBAction)buttonPressed:(id)sender {
-    
+-(IBAction)tapGestureRecognizerDidRecognizeTap:(id)sender {
     if (_gameTimer == nil) {
         // @selector invocazione del metodo...
         _gameTimer = [NSTimer scheduledTimerWithTimeInterval:GameTimer target:self selector:@selector(timerTick) userInfo:nil repeats:true];
@@ -72,6 +71,12 @@
     
     [self.tapsCountLabel setText:[NSString stringWithFormat:@"%i", _tapsCount]];
 }
+
+/*
+- (IBAction)buttonPressed:(id)sender {
+    
+ 
+}*/
 
 -(void)timerTick {
     // stampa il nome della funzione

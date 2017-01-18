@@ -15,6 +15,8 @@
 
 
 - (IBAction)buttonPressed:(id)sender;
+-(IBAction)tapGestureRecognizerDidRecognizeTap:(id)sender;
+
 
 @end
 
